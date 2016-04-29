@@ -136,13 +136,13 @@ figcaption {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  padding: 5px 35px 5px;
+  padding: 8px 35px 5px;
   color: #fff;
   background: #1db1e3;
   font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.875rem;
+  font-size: 1.125rem;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -150,6 +150,8 @@ figcaption {
   .btn:hover {
     background: #ea4c89;
     border-color: #ea4c89; }
+  .submit .btn {
+    font-size: 1rem; }
 
 form {
   margin: 0; }
@@ -238,7 +240,7 @@ h1 {
 .section-steps .site-width {
   border-top: 4px solid #ececec;
   border-bottom: 4px solid #ececec;
-  padding: 8rem 0 2rem;
+  padding: 4rem 0 1rem;
   background-color: #fff;
   background-image: url(../img/vert-border.png);
   background-position: center top;
@@ -278,13 +280,13 @@ h1 {
       fill: #1db1e3; }
 
 h1.step-title {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   background: #fff;
   margin-bottom: 1rem; }
   h1.step-title span {
     color: #999;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     text-transform: none;
     font-weight: 400; }
 
@@ -395,13 +397,16 @@ h1.step-title {
     background: #fff;
     padding: 10px;
     position: relative;
-    min-height: 250px; }
+    min-height: 220px; }
   .items figure {
     margin: 0;
-    padding-top: 1rem;
+    padding-top: 1.5rem;
     cursor: pointer; }
+    .items figure img {
+      width: 80%;
+      max-width: 159px; }
   .items .product {
-    font-size: 1.5rem;
+    font-size: 1.125rem;
     padding: 1rem 0; }
   .items .quantity {
     font-size: 1.875rem;
@@ -451,14 +456,8 @@ h1.step-title {
   position: absolute;
   left: 0;
   top: 0;
-  /*
-  	background-image: url(../img/checked.png);
-  	background-position: 0 0;
-  	background-size: 60px 60px;
-  	background-repeat: no-repeat;
-  */
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   display: none;
   z-index: 10; }
   .checked .checked-box {
@@ -483,7 +482,7 @@ h1.step-title {
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
   border-radius: 8px;
-  font-size: 1.5rem;
+  font-size: 1.125rem;
   font-style: normal;
   text-align: center;
   box-shadow: none;
@@ -497,21 +496,24 @@ h1.step-title {
   text-align: center; }
 .deliveryinfo-section input[type="submit"] {
   border: none;
-  width: 80%; }
+  width: 90%; }
 .deliveryinfo-section .submit {
   text-align: center; }
 
+/* TACK
+--------------------------------------------------------*/
 .section-tack .site-width {
   background: #1db1e3;
   width: 100%; }
 .section-tack .content {
   color: #fff;
   text-align: center;
+  width: 95%;
   max-width: 480px;
   padding: 2rem 0;
   margin: 0 auto; }
 .section-tack p {
-  font-size: 1.875rem;
+  font-size: 1.125rem;
   font-style: normal; }
   .section-tack p + p {
     text-transform: uppercase;
@@ -519,13 +521,13 @@ h1.step-title {
     font-weight: 600;
     font-style: italic; }
 .section-tack svg {
-  width: 150px; }
+  width: 100px; }
   .section-tack svg path,
   .section-tack svg rect,
   .section-tack svg polygon {
     fill: #fff; }
 .section-tack h1 {
-  font-size: 3rem;
+  font-size: 1.5rem;
   border-top: 4px solid #fff;
   border-bottom: 4px solid #fff;
   margin: 0 auto;
@@ -602,6 +604,7 @@ h1.step-title {
 [class^="icon-0"]:last-child {
   *margin-left: 0; }
 
+html.js .js-hidden,
 .hidden {
   display: none !important; }
 
@@ -614,6 +617,15 @@ h1.step-title {
   clear: both; }
 
 @media only screen and (min-width: 600px) {
+  h1.step-title {
+    font-size: 1.875rem;
+    margin-bottom: 1rem; }
+    h1.step-title span {
+      font-size: 1.5rem; }
+
+  .section-steps .site-width {
+    padding: 8rem 0 2rem; }
+
   .page-head .logo {
     top: 15px; }
     .page-head .logo img {
@@ -636,7 +648,59 @@ h1.step-title {
     .block-grid-items > li:nth-of-type(2n+1) {
       clear: none; }
     .block-grid-items > li:nth-of-type(3n+1) {
-      clear: both; } }
+      clear: both; }
+
+  /* ITEMS
+  --------------------------------------------------------*/
+  .items .inner {
+    min-height: 250px; }
+  .items figure img {
+    width: 100%; }
+  .items .product {
+    font-size: 1.5rem; }
+  .items .quantity {
+    font-size: 1.875rem; }
+  .items .reduce,
+  .items .increase {
+    font-size: 3rem; }
+
+  .btn {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    padding: 5px 35px 5px; }
+    .submit .btn {
+      font-size: 1.875rem; }
+
+  .deliveryinfo-section input[type="text"],
+  .deliveryinfo-section input[type="number"],
+  .deliveryinfo-section input[type="email"],
+  .deliveryinfo-section select {
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 1.5rem; }
+  .deliveryinfo-section select {
+    height: 51px; }
+  .deliveryinfo-section input[type="submit"] {
+    width: 80%; }
+
+  .checked-box {
+    width: 60px;
+    height: 60px; }
+
+  /* TACK
+  --------------------------------------------------------*/
+  .section-tack .content {
+    max-width: 480px; }
+  .section-tack p {
+    font-size: 1.875rem; }
+  .section-tack svg {
+    width: 150px; }
+  .section-tack h1 {
+    font-size: 3rem;
+    padding-top: 0.5rem;
+    line-height: 1.2; } }
 @media only screen and (min-width: 768px) {
   .page-head .logo {
     top: 25px; }
