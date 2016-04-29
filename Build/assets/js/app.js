@@ -1,0 +1,37 @@
+jQuery(document).ready(function($){
+  
+	$('.slickDefault').slick({
+  infinite: true,
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+});
+
+	  var $header = $('.page-head'),
+		headerHeight = 100,
+		$document = $(document),
+		fade = false,
+		cachedFade = fade;
+  
+  
+	$(window).load(function(){
+		$('body').addClass('loaded');
+	});
+	
+	$(window).on('scroll', function(){
+		if ($document.scrollTop() > headerHeight) {
+			fade = true;
+			
+			if (fade !== cachedFade) {
+				$header.addClass('fade');
+			}
+		} else {
+			fade = false;
+			if (fade !== cachedFade) {
+				$header.removeClass('fade');
+			}
+		}
+		cachedFade = fade;
+	});
+
+});
