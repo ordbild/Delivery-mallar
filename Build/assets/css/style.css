@@ -467,7 +467,8 @@ h1.step-title {
 --------------------------------------------------------*/
 .deliveryinfo-section .site-width {
   background: #f7f7f7;
-  width: 100%; }
+  width: 100%;
+  padding-top: 0; }
 .deliveryinfo-section .inner {
   padding: 20px; }
 .deliveryinfo-section label {
@@ -489,7 +490,7 @@ h1.step-title {
   border: 2px solid #ececec; }
 .deliveryinfo-section select {
   text-align: center;
-  height: 51px;
+  height: 40px;
   margin: 0;
   -webkit-appearance: none; }
 .deliveryinfo-section option {
@@ -499,6 +500,17 @@ h1.step-title {
   width: 90%; }
 .deliveryinfo-section .submit {
   text-align: center; }
+.deliveryinfo-section button {
+  background: transparent;
+  border: none;
+  width: 50%;
+  text-transform: uppercase;
+  font-size: 1.125rem; }
+  .deliveryinfo-section button.active {
+    color: #1db1e3;
+    border-bottom: 4px solid #1db1e3; }
+  .deliveryinfo-section button:focus {
+    outline: none; }
 
 /* TACK
 --------------------------------------------------------*/
@@ -684,6 +696,8 @@ html.js .js-hidden,
     height: 51px; }
   .deliveryinfo-section input[type="submit"] {
     width: 80%; }
+  .deliveryinfo-section button {
+    font-size: 1.5rem; }
 
   .checked-box {
     width: 60px;
