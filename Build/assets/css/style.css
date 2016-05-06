@@ -123,7 +123,7 @@ figcaption {
 
 .table {
   display: table;
-  height: 90%;
+  height: 130%;
   width: 100%;
   position: relative;
   z-index: 9; }
@@ -211,7 +211,7 @@ h1 {
   height: 400px;
   overflow: hidden;
   position: fixed;
-  background-image: url(../img/skissbild.jpg);
+  background-image: url(../img/lindahls-delivery-top-750.jpg);
   background-repeat: no-repeat;
   background-position: top center; }
   .page-head .logo {
@@ -509,6 +509,8 @@ h1.step-title {
   .deliveryinfo-section button.active {
     color: #1db1e3;
     border-bottom: 4px solid #1db1e3; }
+  .deliveryinfo-section button:hover {
+    color: #1db1e3; }
   .deliveryinfo-section button:focus {
     outline: none; }
 
@@ -716,17 +718,22 @@ html.js .js-hidden,
     padding-top: 0.5rem;
     line-height: 1.2; } }
 @media only screen and (min-width: 768px) {
-  .page-head .logo {
-    top: 25px; }
-    .page-head .logo img {
-      width: 181px; }
+  .page-head {
+    background-image: url(../img/lindahls-delivery-top-1920.jpg); }
+    .page-head .logo {
+      top: 25px; }
+      .page-head .logo img {
+        width: 181px; }
 
   .page-wrapper {
     margin-top: -70px; }
 
   .page-head,
   .frontbox {
-    height: 750px; } }
+    height: 750px; }
+
+  .table {
+    height: 100%; } }
 @media only screen and (min-width: 1024px) {
   .page-wrapper {
     margin-top: -200px; } }
