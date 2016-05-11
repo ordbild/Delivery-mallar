@@ -37,6 +37,8 @@ body {
   line-height: 1.4;
   -webkit-font-smoothing: antialiased;
   -webkit-text-size-adjust: 100%; }
+  body.tack {
+    background: #1db1e3; }
 
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -238,12 +240,14 @@ h1 {
   display: none; }
   .info-bar-wrapper.active {
     display: block; }
+  body.tack .info-bar-wrapper {
+    display: none; }
   .info-bar-wrapper .info {
     width: 33.333333%;
     float: left;
     text-align: center;
     font-weight: 600;
-    line-height: 1; }
+    line-height: 1.1; }
     .info-bar-wrapper .info span {
       display: block; }
       .info-bar-wrapper .info span.object {
@@ -530,38 +534,42 @@ h1.step-title {
 
 /* TACK
 --------------------------------------------------------*/
-.section-tack .site-width {
-  background: #1db1e3;
-  width: 100%; }
-.section-tack .content {
-  color: #fff;
-  text-align: center;
-  width: 95%;
-  max-width: 480px;
-  padding: 2rem 0;
-  margin: 0 auto; }
-.section-tack p {
-  font-size: 1.125rem;
-  font-style: normal; }
-  .section-tack p + p {
-    text-transform: uppercase;
-    margin: 4rem 0;
-    font-weight: 600;
-    font-style: italic; }
-.section-tack svg {
-  width: 100px; }
-  .section-tack svg path,
-  .section-tack svg rect,
-  .section-tack svg polygon {
-    fill: #fff; }
-.section-tack h1 {
-  font-size: 1.5rem;
-  border-top: 4px solid #fff;
-  border-bottom: 4px solid #fff;
-  margin: 0 auto;
-  padding-top: 0.5rem;
-  display: inline-block;
-  line-height: 1.2; }
+.section-tack {
+  height: 100%; }
+  .section-tack .site-width {
+    background: #1db1e3;
+    width: 95%; }
+  .section-tack .table {
+    height: 100%; }
+  .section-tack .content {
+    color: #fff;
+    text-align: center;
+    width: 95%;
+    max-width: 480px;
+    padding: 2rem 0;
+    margin: 0 auto; }
+  .section-tack p {
+    font-size: 1.125rem;
+    font-style: normal; }
+    .section-tack p + p {
+      text-transform: uppercase;
+      margin: 4rem 0;
+      font-weight: 600;
+      font-style: italic; }
+  .section-tack svg {
+    width: 100px; }
+    .section-tack svg path,
+    .section-tack svg rect,
+    .section-tack svg polygon {
+      fill: #fff; }
+  .section-tack h1 {
+    font-size: 1.5rem;
+    border-top: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    margin: 0 auto;
+    padding-top: 0.5rem;
+    display: inline-block;
+    line-height: 1.2; }
 
 /* BLOCKGRID
 --------------------------------------------------------*/
