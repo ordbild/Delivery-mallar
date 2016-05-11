@@ -1,38 +1,28 @@
-/*
 @import url("//hello.myfonts.net/count/2f2855");
-
-@font-face
-{
+@font-face {
   font-family: Verlag;
-  src: url(../fonts/Verlag-Book.woff) format('woff'), url(../fonts/Verlag-Book.ttf) format('truetype'), url(../fonts/Verlag-Book.svg) format('svg');
-}
-@font-face
-{
+  src: url(../fonts/Verlag-Book.woff) format("woff"), url(../fonts/Verlag-Book.ttf) format("truetype"), url(../fonts/Verlag-Book.svg) format("svg"); }
+@font-face {
   font-family: Verlag;
   font-weight: bold;
-  src: url(../fonts/Verlag-Bold.woff) format('woff'), url(../fonts/Verlag-Bold.ttf) format('truetype'), url(../fonts/Verlag-Bold.svg) format('svg');
-}
-@font-face
-{
+  src: url(../fonts/Verlag-Bold.woff) format("woff"), url(../fonts/Verlag-Bold.ttf) format("truetype"), url(../fonts/Verlag-Bold.svg) format("svg"); }
+@font-face {
   font-family: Verlag;
   font-weight: 100;
-  src: url(../fonts/Verlag-XLight.woff) format('woff'), url(../fonts/Verlag-XLight.ttf) format('truetype'), url(../fonts/Verlag-XLight.svg) format('svg');
-}
-@font-face
-{
+  src: url(../fonts/Verlag-XLight.woff) format("woff"), url(../fonts/Verlag-XLight.ttf) format("truetype"), url(../fonts/Verlag-XLight.svg) format("svg"); }
+@font-face {
   font-family: Verlag;
   font-style: italic;
-  src: url(../fonts/Verlag-BookItalic.woff) format('woff'), url(../fonts/Verlag-BookItalic.ttf) format('truetype'), url(../fonts/Verlag-BookItalic.svg) format('svg');
-}
-@font-face
-{
+  src: url(../fonts/Verlag-BookItalic.woff) format("woff"), url(../fonts/Verlag-BookItalic.ttf) format("truetype"), url(../fonts/Verlag-BookItalic.svg) format("svg"); }
+@font-face {
   font-family: Verlag;
   font-weight: bold;
   font-style: italic;
-  src: url('../fonts/Verlag-BoldItalic.woff') format('woff'), url(../fonts/Verlag-BoldItalic.ttf) format('truetype'), url(../fonts/Verlag-BoldItalic.svg) format('svg');
-}
-@font-face {font-family: 'CaslonTwoTwentyFour-BoldIt';src: url(../fonts/2F2855_0_0.eot);src: url(../fonts/2F2855_0_0.eot?#iefix) format('embedded-opentype'),url(../fonts/2F2855_0_0.woff2) format('woff2'),url(../fonts/2F2855_0_0.woff) format('woff'),url(../fonts/2F2855_0_0.ttf) format('truetype');}
-*/
+  src: url("../fonts/Verlag-BoldItalic.woff") format("woff"), url(../fonts/Verlag-BoldItalic.ttf) format("truetype"), url(../fonts/Verlag-BoldItalic.svg) format("svg"); }
+@font-face {
+  font-family: 'CaslonTwoTwentyFour-BoldIt';
+  src: url(../fonts/2F2855_0_0.eot);
+  src: url(../fonts/2F2855_0_0.eot?#iefix) format("embedded-opentype"), url(../fonts/2F2855_0_0.woff2) format("woff2"), url(../fonts/2F2855_0_0.woff) format("woff"), url(../fonts/2F2855_0_0.ttf) format("truetype"); }
 html,
 body {
   height: 100%;
@@ -213,6 +203,7 @@ h1 {
   position: fixed;
   background-image: url(../img/lindahls-delivery-top-750.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: top center; }
   .page-head .logo {
     text-align: center;
@@ -234,6 +225,29 @@ h1 {
   left: 0;
   width: 100%;
   height: 100%; }
+
+/* INFOBAR
+--------------------------------------------------------*/
+.info-bar-wrapper {
+  position: fixed;
+  width: 100%;
+  background: #000;
+  color: #fff;
+  z-index: 2000;
+  padding: 10px 0;
+  display: none; }
+  .info-bar-wrapper.active {
+    display: block; }
+  .info-bar-wrapper .info {
+    width: 33.333333%;
+    float: left;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1; }
+    .info-bar-wrapper .info span {
+      display: block; }
+      .info-bar-wrapper .info span.object {
+        text-transform: uppercase; }
 
 /* STEPS
 --------------------------------------------------------*/
@@ -374,14 +388,14 @@ h1.step-title {
 
 .slide-content {
   display: table;
-  height: 100%;
+  height: 90%;
   width: 100%;
   position: relative;
   z-index: 9;
   color: #fff; }
   .slide-content header {
     display: table-cell;
-    vertical-align: middle; }
+    vertical-align: bottom; }
   .slide-content h1 {
     margin: 0; }
 
