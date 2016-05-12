@@ -264,7 +264,7 @@ h1 {
   .info-bar-wrapper .step-circle {
     width: 24px;
     height: 24px;
-    margin: 0 auto 5px;
+    margin: 0 auto 10px;
     border-color: #fff;
     background: #000;
     border-width: 1px; }
@@ -347,8 +347,8 @@ h1.step-title {
     font-size: 0.875rem; }
   .steps .arrow-steps {
     position: absolute;
-    width: 24px;
-    height: 22px;
+    width: 12px;
+    height: 11px;
     top: 50px;
     right: 0; }
   .steps .step2 .arrow-steps {
@@ -417,7 +417,8 @@ h1.step-title {
     display: table-cell;
     vertical-align: bottom; }
   .slide-content h1 {
-    margin: 0; }
+    margin: 0;
+    font-size: 0.875rem; }
 
 /* ITEMS
 --------------------------------------------------------*/
@@ -502,13 +503,13 @@ h1.step-title {
 .deliveryinfo-section .site-width {
   background: #f7f7f7;
   width: 100%;
-  padding-top: 0; }
+  padding: 0 !important; }
 .deliveryinfo-section .inner {
   padding: 20px; }
 .deliveryinfo-section label {
   display: none; }
 .deliveryinfo-section div {
-  padding: 20px 0; }
+  padding: 10px 0; }
 .deliveryinfo-section input[type="text"],
 .deliveryinfo-section input[type="number"],
 .deliveryinfo-section input[type="email"],
@@ -701,10 +702,20 @@ html.js .js-hidden,
     font-size: 1rem; }
   .steps .inner {
     padding: 0 20px; }
+  .steps .arrow-steps {
+    height: 24px;
+    width: 22px;
+    top: 40px; }
 
   .slickDefault {
     margin-left: -2px;
     margin-right: -2px; }
+
+  .slide-content h1 {
+    font-size: 1.125rem; }
+
+  .deliveryinfo-section div {
+    padding: 20px 0; }
 
   .block-grid-items > li {
     width: 33.333333%; }
