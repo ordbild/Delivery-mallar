@@ -285,8 +285,8 @@ h1 {
   color: #1db1e3;
   background: #fff;
   border: 2px solid #ececec;
-  width: 80px;
-  height: 80px;
+  width: 50px;
+  height: 50px;
   display: inline-block;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -384,8 +384,9 @@ h1.step-title {
   position: relative; }
 
 .slickDefault {
-  margin-left: -1px;
-  margin-right: -1px; }
+  width: 150%;
+  margin-left: -25%;
+  margin-right: -25%; }
 
 .box-width--slider {
   position: absolute;
@@ -681,6 +682,10 @@ html.js .js-hidden,
       width: 32px;
       height: 32px; }
 
+  .step-circle {
+    width: 60px;
+    height: 60px; }
+
   h1.step-title {
     font-size: 1.875rem;
     margin-bottom: 1rem; }
@@ -708,8 +713,9 @@ html.js .js-hidden,
     top: 40px; }
 
   .slickDefault {
-    margin-left: -2px;
-    margin-right: -2px; }
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0; }
 
   .slide-content h1 {
     font-size: 1.125rem; }
