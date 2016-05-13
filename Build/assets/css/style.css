@@ -544,6 +544,11 @@ h1.step-title {
   .deliveryinfo-section input[type="email"].error,
   .deliveryinfo-section select.error {
     border-color: red !important; }
+  .deliveryinfo-section input[type="text"]:focus.error,
+  .deliveryinfo-section input[type="number"]:focus.error,
+  .deliveryinfo-section input[type="email"]:focus.error,
+  .deliveryinfo-section select:focus.error {
+    border-color: #ececec !important; }
 .deliveryinfo-section select {
   text-align: center;
   height: 40px;
@@ -688,7 +693,7 @@ input:focus:-ms-input-placeholder {
   color: #fff;
   z-index: 3000;
   text-align: center;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.75);
   opacity: 1;
   -webkit-transition: all 0.25s;
   -moz-transition: all 0.25s;
