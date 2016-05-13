@@ -466,12 +466,13 @@ h1.step-title {
     li.checked .inner .quantity .items .reduce, li.checked .inner .quantity
     .items .increase {
       color: #1db1e3; }
+    .items .reduce button,
+    .items .increase button {
+      width: 100%; }
   .items .reduce {
-    text-align: left;
-    padding-left: 15px; }
+    text-align: center; }
   .items .increase {
-    text-align: right;
-    padding-right: 15px; }
+    text-align: center; }
   .items .grid {
     width: 33.333333%;
     float: left; }
@@ -513,6 +514,13 @@ h1.step-title {
   padding: 0 !important; }
 .deliveryinfo-section .inner {
   padding: 20px; }
+.deliveryinfo-section h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  display: none; }
+  .deliveryinfo-section h2.to-a-friend {
+    display: block; }
 .deliveryinfo-section label {
   display: none; }
 .deliveryinfo-section div {
@@ -535,6 +543,7 @@ h1.step-title {
   text-align: center;
   height: 40px;
   margin: 0;
+  padding-left: 10px;
   -webkit-appearance: none; }
 .deliveryinfo-section option {
   text-align: center; }
@@ -771,6 +780,8 @@ html.js .js-hidden,
     -moz-border-radius: 8px;
     -webkit-border-radius: 8px;
     border-radius: 8px;
+    font-size: 1.5rem; }
+  .deliveryinfo-section h2 {
     font-size: 1.5rem; }
   .deliveryinfo-section select {
     height: 51px; }
