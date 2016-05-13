@@ -352,7 +352,7 @@ h1.step-title {
     font-size: 0.875rem; }
   .steps h3 {
     margin: 0 0 0.5rem;
-    line-height: 1.2;
+    line-height: 1;
     font-size: 0.875rem; }
   .steps .arrow-steps {
     position: absolute;
@@ -365,21 +365,18 @@ h1.step-title {
   .steps figure {
     margin: 0.5rem 0; }
     .steps figure.kvarg svg {
-      margin-top: 10px;
       width: 40px; }
       .steps figure.kvarg svg path,
       .steps figure.kvarg svg rect,
       .steps figure.kvarg svg polygon {
         fill: #fff; }
     .steps figure.utspringning svg {
-      margin-top: 10px;
       width: 40px; }
       .steps figure.utspringning svg path,
       .steps figure.utspringning svg rect,
       .steps figure.utspringning svg polygon {
         fill: #fff; }
     .steps figure.swish svg {
-      margin-top: 10px;
       width: 40px; }
       .steps figure.swish svg path,
       .steps figure.swish svg rect,
