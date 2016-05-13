@@ -30,6 +30,21 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+<div class="error-wrapper">
+	<div class="site-width table">
+		<div class="table-cell">
+			<div class="error-massage">
+				<div class="close"><a href="">X</a></div>
+				<h1>Error! <span>Du har missat:</span></h1>
+				<ul>
+					<li>Fylla i namn</li>
+					<li>Fylla i adress</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
 
 
@@ -268,7 +283,7 @@
 	</section> 
   <section class="deliveryinfo-section">
 	  <div class="site-width">
-		   <button class="active">Till mig</button><button>Till en vän</button>
+		   <button>Till mig</button><button class="active">Till en vän</button>
 		 <div class="inner">
 			 <div> 
         <label for="tel">Telefonnummer</label>
@@ -278,11 +293,11 @@
     	<h2 class="to-a-friend">Din väns uppgifter</h2>
 			<div> 
         <label for="namn">Förnam Efternamn</label>
-        	<input id="namn" name="namn" type="text" placeholder="Förnamn Efternamn"> 
+        	<input id="namn" name="namn" type="text" placeholder="Förnamn Efternamn" class="error"> 
     	</div>
     	<div> 
         <label for="adress">Gata & nummer</label>
-        	<input id="adress" name="adress" type="text" placeholder="Adress"> 
+        	<input id="adress" name="adress" type="text" placeholder="Adress" class="error"> 
     	</div>
     	<div> 
         <label for="postnummer">Postnummer</label>

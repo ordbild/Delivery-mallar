@@ -7,6 +7,11 @@ jQuery(document).ready(function($){
   slidesToScroll: 1,
 });
 
+	$('.close a').click(function(e){
+		$('.error-wrapper').addClass("not-visible");
+		e.preventDefault();
+	});
+
 	  var $header = $('.page-head'),
 		headerHeight = 100,
 		$document = $(document),
