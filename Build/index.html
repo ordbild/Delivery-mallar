@@ -40,6 +40,7 @@
 		 		<div class="site-width table">
 		 			<div class="table-cell">
 		 				<h1><img src="assets/img/logo-delivery.png" alt="Lindahls Delivery" /></h1>
+		 				<a href="" class="btn go-to">Välj stad</a>
 		 			</div>
 		 		</div>
 		 	</div>
@@ -82,17 +83,17 @@
 			</span>
 			<span class="object">Stockholm</span>
 		</div>
-		<div class="info info-quantity">
-			<span class="step-circle">
-				<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><style>.st0{fill:#1DB1E3;}</style><path class="st0" d="M118.2 110.6c-6.4 6.4-13.6 13.1-23.2 21h34.2l-2.9 15.7H63.9l1-7.5c17.3-14.6 28.2-25.1 36.5-33.1 12.2-11.4 17.1-18.1 17.1-25.6s-5.6-12.5-14.1-12.5c-6.9 0-13.3 2.2-20.3 6.4l-3.8-14.6c8.8-5.1 17-8.2 26.9-8 18.4 0 29.6 11.4 29.6 25.4-.1 12.4-5.7 20-18.6 32.8z"/></svg>
-			</span>
-			<span class="object">Antal kvarg</span>
-		</div>
 		<div class="info info-delivery">
 			<span class="step-circle">
 				<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><style>.st0{fill:#1DB1E3;}</style><path class="st0" d="M137.6 61.8L102 92.4c14.7 2.7 24 11.4 24 24.6 0 17.3-14.2 30.9-36.5 30.9-10.9 0-20.3-2.7-29.1-6.6l7-14.6c7.5 3.4 14.9 5.3 21.9 5.3 11.5 0 18.1-5.8 18.1-13.9 0-8.8-7.7-14.2-24.2-14.2-1.8 0-3.4.2-5.1.5l-1.6-6.1 33.6-29.6H76.8l3-15.7h59l-1.2 8.8z"/></svg>
 			</span>
 			<span class="object">Leverans</span>
+		</div>
+		<div class="info info-quantity">
+			<span class="step-circle">
+				<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><style>.st0{fill:#1DB1E3;}</style><path class="st0" d="M118.2 110.6c-6.4 6.4-13.6 13.1-23.2 21h34.2l-2.9 15.7H63.9l1-7.5c17.3-14.6 28.2-25.1 36.5-33.1 12.2-11.4 17.1-18.1 17.1-25.6s-5.6-12.5-14.1-12.5c-6.9 0-13.3 2.2-20.3 6.4l-3.8-14.6c8.8-5.1 17-8.2 26.9-8 18.4 0 29.6 11.4 29.6 25.4-.1 12.4-5.7 20-18.6 32.8z"/></svg>
+			</span>
+			<span class="object">Antal kvarg</span>
 		</div>
 		<div class="info info-uppgifter">
 			<span class="step-circle">
@@ -262,13 +263,18 @@
 	<section class="section-steps">
 		<div class="site-width">
 		<span class="step-circle"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><style>.st0{fill:#1DB1E3;}</style><path class="st0" d="M134 123.8h-14.1l-4.6 23.8H98.2l4.6-23.8H62.6l1.9-10.1L124 52.3h9.9l-11.2 57.1h13.9l-2.6 14.4zm-23.4-39.7l-24 25.3h19.2l4.8-25.3z"/></svg></span>
-			<h1 class="step-title">Leverans</h1>
+			<h1 class="step-title">Uppgifter</h1>
 		</div>
 	</section> 
   <section class="deliveryinfo-section">
 	  <div class="site-width">
 		   <button class="active">Till mig</button><button>Till en vän</button>
 		 <div class="inner">
+			 <div> 
+        <label for="tel">Telefonnummer</label>
+        	<input id="tel" name="tel" type="text" placeholder="Telefonnummer">
+        	<div class="description">Detta nummer används för att bekräfta betalning för swish. <br>Om du betäller till en kompis måste du förhands-swisha för att vi ska leverera kvarg.</div> 
+    	</div>
 			<div> 
         <label for="namn">Förnam Efternamn</label>
         	<input id="namn" name="namn" type="text" placeholder="Förnamn Efternamn"> 
@@ -280,10 +286,6 @@
     	<div> 
         <label for="postnummer">Postnummer</label>
         	<input id="postnummer" name="postnummer" type="text" placeholder="Postnummer"> 
-    	</div>
-    	<div> 
-        <label for="tel">Telefonnummer</label>
-        	<input id="tel" name="tel" type="text" placeholder="Telefonnummer"> 
     	</div>
     	<div> 
         <label for="ovrigt">Övrigt, portkod osv</label>
