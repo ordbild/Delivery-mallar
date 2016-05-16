@@ -288,14 +288,17 @@ h1 {
 /* STEPS
 --------------------------------------------------------*/
 .section-steps .site-width {
-  border-top: 2px solid #ececec;
   border-bottom: 2px solid #ececec;
-  padding: 4rem 0 1rem;
+  padding: 0 0 1rem;
   background-color: #fff;
   background-image: url(../img/vert-border.png);
   background-position: center top;
   background-repeat: repeat-y;
   text-align: center; }
+.section-steps.top .site-width {
+  padding-top: 3rem;
+  border-top: 2px solid #ececec;
+  border-bottom: none; }
 
 .step-circle {
   color: #1db1e3;
@@ -795,7 +798,9 @@ html.js .js-hidden,
       font-size: 1.5rem; }
 
   .section-steps .site-width {
-    padding: 8rem 0 2rem; }
+    padding: 0 0 2rem; }
+  .section-steps.top .site-width {
+    padding-top: 6rem; }
 
   .page-head .logo {
     top: 15px; }
