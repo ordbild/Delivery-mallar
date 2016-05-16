@@ -115,7 +115,7 @@ figcaption {
 
 .table {
   display: table;
-  height: 130%;
+  height: 100%;
   width: 100%;
   position: relative;
   z-index: 9; }
@@ -202,6 +202,13 @@ h1 {
   margin: 0 auto;
   overflow: hidden;
   text-align: center; }
+  .frontbox .table-cell {
+    position: relative; }
+  .frontbox .go-to {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    margin-left: -65px; }
 
 .page-head {
   margin: 0 auto;
@@ -592,7 +599,7 @@ h1.step-title {
   .section-tack .content {
     color: #fff;
     text-align: center;
-    width: 95%;
+    width: 80%;
     max-width: 480px;
     padding: 2rem 0;
     margin: 0 auto; }
@@ -892,9 +899,15 @@ html.js .js-hidden,
   .page-head,
   .frontbox {
     height: 750px; }
+    .page-head .go-to,
+    .frontbox .go-to {
+      bottom: 80px; }
 
   .table {
     height: 100%; } }
 @media only screen and (min-width: 1024px) {
   .page-wrapper {
-    margin-top: -200px; } }
+    margin-top: -200px; }
+
+  .frontbox .go-to {
+    bottom: 210px; } }
