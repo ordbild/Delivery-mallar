@@ -439,6 +439,9 @@ h1.step-title {
 
 /* ITEMS
 --------------------------------------------------------*/
+.items .drickkvarg figure {
+  padding-top: 1.5rem; }
+
 .items {
   list-style: none;
   text-align: center;
@@ -449,10 +452,10 @@ h1.step-title {
     background: #fff;
     padding: 10px;
     position: relative;
-    min-height: 220px; }
+    min-height: 300px; }
   .items figure {
     margin: 0;
-    padding-top: 1.5rem;
+    padding-top: 4rem;
     cursor: pointer; }
     .items figure img {
       width: 80%;
@@ -840,7 +843,7 @@ html.js .js-hidden,
   /* ITEMS
   --------------------------------------------------------*/
   .items .inner {
-    min-height: 250px; }
+    min-height: 330px; }
   .items figure img {
     width: 100%; }
   .items .product {
