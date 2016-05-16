@@ -146,10 +146,16 @@ figcaption {
   .submit .btn {
     font-size: 1rem; }
   .btn.go-to {
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
-    font-size: 0.75rem; }
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    font-size: 0.75rem;
+    background: transparent;
+    border: 2px solid #fff; }
+    .btn.go-to:hover {
+      background: #1db1e3;
+      border-color: #1db1e3;
+      color: #fff; }
 
 form {
   margin: 0; }
@@ -216,7 +222,7 @@ h1 {
   height: 400px;
   overflow: hidden;
   position: fixed;
-  background-image: url(../img/lindahls-delivery-top-750.jpg);
+  background-image: url(../img/header-phone.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top center; }
