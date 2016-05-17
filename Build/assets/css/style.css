@@ -190,6 +190,14 @@ h1 {
 
 /* SECTIONS
 --------------------------------------------------------*/
+/*
+.in-active {
+	background: #fff;
+	.site-width {
+		opacity: 0.4;
+	}
+}
+*/
 .page-wrapper {
   position: relative;
   z-index: 100;
@@ -214,7 +222,7 @@ h1 {
     position: absolute;
     bottom: 10px;
     left: 50%;
-    margin-left: -65px; }
+    margin-left: -82px; }
 
 .page-head {
   margin: 0 auto;
@@ -237,7 +245,7 @@ h1 {
   .page-head h1 {
     text-align: center; }
     .page-head h1 img {
-      width: 40%;
+      width: 50%;
       max-width: 270px; }
 
 .title-wrapper {
@@ -458,10 +466,10 @@ h1.step-title {
     background: #fff;
     padding: 10px;
     position: relative;
-    min-height: 300px; }
+    min-height: 250px; }
   .items figure {
     margin: 0;
-    padding-top: 4rem;
+    padding-top: 3rem;
     cursor: pointer; }
     .items figure img {
       width: 80%;
@@ -730,13 +738,13 @@ input:focus:-ms-input-placeholder {
     margin: 0 auto;
     position: relative; }
     .error-wrapper .error-massage h1 {
-      font-size: 3rem;
+      font-size: 1.875rem;
       margin-top: 0; }
       .error-wrapper .error-massage h1 span {
         display: block;
-        font-size: 1.875rem; }
+        font-size: 1.5rem; }
     .error-wrapper .error-massage p {
-      font-size: 1.5rem; }
+      font-size: 1rem; }
     .error-wrapper .error-massage a {
       color: #fff;
       font-style: normal;
@@ -783,9 +791,17 @@ html.js .js-hidden,
 .clearfix:after {
   clear: both; }
 
+@media only screen and (min-width: 375px) {
+  .items .inner {
+    min-height: 280px; } }
 @media only screen and (min-width: 480px) {
   .info-bar-wrapper {
     font-size: 0.75rem; } }
+@media only screen and (min-width: 568px) {
+  .items .inner {
+    min-height: 320px; }
+  .items figure {
+    padding-top: 4rem; } }
 @media only screen and (min-width: 600px) {
   .info-bar-wrapper {
     font-size: 0.875rem; }
@@ -798,7 +814,8 @@ html.js .js-hidden,
     height: 60px; }
 
   .btn.go-to {
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    margin-left: -89px; }
 
   h1.step-title {
     font-size: 1.875rem;
