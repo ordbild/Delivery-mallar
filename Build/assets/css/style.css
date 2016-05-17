@@ -450,10 +450,12 @@ h1.step-title {
     vertical-align: bottom; }
   .slide-content h1 {
     margin: 0;
-    font-size: 0.875rem; }
+    font-size: 0.875rem;
+    line-height: 1; }
 
 .choose-city {
   color: #1db1e3;
+  font-weight: 600;
   width: 100%;
   text-align: center;
   padding: 0.83rem 0.5rem;
@@ -513,14 +515,17 @@ h1.step-title {
     width: 33.333333%;
     float: left; }
   .items button,
+  .items input[type="number"],
   .items input {
     line-height: 0.5;
     background: transparent;
     border: none; }
     .items button:focus,
+    .items input[type="number"]:focus,
     .items input:focus {
       outline: none; }
     li.checked .items button button, li.checked
+    .items input[type="number"] button, li.checked
     .items input button {
       color: #1db1e3; }
   .items button {
