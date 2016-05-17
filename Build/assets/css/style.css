@@ -631,6 +631,13 @@ h1.step-title {
       margin: 4rem 0;
       font-weight: 600;
       font-style: italic; }
+    .section-tack p.small {
+      font-size: 1rem; }
+      .section-tack p.small a {
+        color: #fff;
+        text-transform: none; }
+        .section-tack p.small a:hover {
+          color: #ea4c89; }
   .section-tack svg {
     width: 100px; }
     .section-tack svg path,
@@ -643,6 +650,7 @@ h1.step-title {
     border-bottom: 2px solid #fff;
     margin: 0 auto;
     padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
     display: inline-block;
     line-height: 1.2; }
 
@@ -915,6 +923,7 @@ html.js .js-hidden,
   .section-tack h1 {
     font-size: 3rem;
     padding-top: 0.5rem;
+    padding-bottom: 0;
     line-height: 1.2; } }
 @media only screen and (min-width: 768px) {
   .page-head {
