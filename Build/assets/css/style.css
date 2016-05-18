@@ -563,7 +563,8 @@ h1.step-title {
   .deliveryinfo-section h2.to-a-friend {
     display: block; }
 .deliveryinfo-section label {
-  display: none; }
+  display: none;
+  display: block \9; }
 .deliveryinfo-section div {
   padding: 10px 0; }
 .deliveryinfo-section input[type="text"],
