@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 		e.preventDefault();
 	});
 	$('a.villkor').click(function(e){
-		$('.error-wrapper, .villkor-wrapper').removeClass("not-visible");
+		$('.villkor-wrapper').removeClass("not-visible");
 		e.preventDefault();
 	});
 
