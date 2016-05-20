@@ -8,7 +8,11 @@ jQuery(document).ready(function($){
 });
 
 	$('.close a').click(function(e){
-		$('.error-wrapper').addClass("not-visible");
+		$('.error-wrapper, .villkor-wrapper').addClass("not-visible");
+		e.preventDefault();
+	});
+	$('a.villkor').click(function(e){
+		$('.error-wrapper, .villkor-wrapper').removeClass("not-visible");
 		e.preventDefault();
 	});
 
